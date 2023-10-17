@@ -28,10 +28,6 @@ Welcome to the User-Friendly School Management System (UF-SMS) repository. UF-SM
 
 - [Configuration](#) - Coming Soon!
 
-## Contributing
-
-We welcome contributions from the community to enhance UF-SMS. If you'd like to contribute, please follow our [Contributing Guidelines](CONTRIBUTING.md).
-
 ## License
 
 This project is licensed under the GNU GPL - see the [LICENSE](LICENSE) file for details.
