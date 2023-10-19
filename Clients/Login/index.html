@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="User">
+        <img class="UserIcon" src="imgs/user.png" alt="" />
+      </div>
+
+      <div class="containerUserInputForm">
+        <form class="loginForm">
+          <div class="containerInput">
+            <img
+              class="containerInputUserIcon inputIconPosition"
+              src="imgs/user.png"
+              alt=""
+            />
+            <input
+              class="containerInputUsername inputStyle"
+              type="text"
+              name="username"
+              placeholder="USERNAME"
+              required
+            />
+
+            <img
+              class="containerInputPadlock inputIconPosition"
+              src="imgs/padlock.png"
+              alt=""
+            />
+            <input
+              class="containerInputPassword inputStyle"
+              type="password"
+              name="password"
+              placeholder="PASSWORD"
+              required
+            />
+          </div>
+
+          <div class="containerRadialOptions">
+            <div class="containerRadialOptionsRememberMe">
+              <input type="radio" name="Radio" value="RememberMeTRUE" />
+              <label for="remember">Remember Me</label>
+            </div>
+
+            <div class="containerRadialOptionsForgotPassword">
+              <input type="radio" name="Radio" value="ForgotPasswordTRUE" />
+              <label for="remember">Forgot Password</label>
+            </div>
+          </div>
+
+          <button type="submit" class="submitButton">Login</button>
+        </form>
+
+        <div class="createAccount">
+          <p class="createAccountText">Don't have an account yet?</p>
+          <a class="createAccountLink" href="#">Create an account</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

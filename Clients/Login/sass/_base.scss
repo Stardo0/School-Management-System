@@ -1,0 +1,32 @@
+//////////////////////////////////////////////////
+// RESETS
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+
+  font-family: "Lato";
+  font-size: $font-default;
+  font-weight: 400;
+
+  color: #3f37c9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/Clients/Login/imgs/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

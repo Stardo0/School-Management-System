@@ -1,0 +1,125 @@
+//////////////////////////////////////////////////
+//
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  //   background-image: url("/Clients/Login/imgs/loginBG.jpg");
+  //   background-repeat: no-repeat;
+  //   background-size: auto;
+  background-color: hsla(182, 82%, 93%, 0.76);
+  border-radius: 0.3rem;
+
+  padding: 3rem 1.5rem;
+}
+
+.User {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 0.7rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  &Icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.containerUserInputForm {
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  &Username {
+  }
+
+  &Password {
+  }
+
+  &UserIcon {
+  }
+  &Padlock {
+  }
+}
+
+.containerRadialOptions {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  &RememberMe {
+    margin-right: 1rem;
+  }
+
+  &ForgotPassword {
+  }
+}
+
+.submitButton {
+  padding: 0.3rem 5rem;
+  border-radius: 15rem;
+  margin-bottom: 1rem;
+}
+
+.createAccount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &Text {
+  }
+
+  &Link {
+    margin-top: 0.3rem;
+    text-decoration: none;
+    color: red;
+
+    &:hover {
+      text-decoration: underline;
+      scale: 1.2;
+      font-weight: 700;
+    }
+    &:focus {
+      scale: 1;
+      font-weight: 400;
+    }
+    &:visited {
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputStyle {
+  border-radius: 1rem;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+}
+
+.inputIconPosition {
+  position: relative;
+  left: 4rem;
+  top: 1.4rem;
+
+  width: 1.2rem;
+  height: 1.2rem;
+}
