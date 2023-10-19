@@ -4,14 +4,30 @@
   "description": "Welcome to the User-Friendly School Management System (UF-SMS) repository. UF-SMS is currently in development and is designed to provide a seamless digital solution for school management, with a focus on simplifying worksheet sharing between teachers and students.",
   "main": "server.js",
   "scripts": {
-    "start" :"nodemon ./server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "startlive": "nodemon ./server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "sass clients/login/sass/main.scss clients/login/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "sass clients/login/sass/main.scss clients/login/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' clients/login/css/style.comp.css -o clients/login/css/style.prefix.css",
+    "compress:css": "sass clients/login/css/style.prefix.css clients/login/css/style.css --style compressed",
+    "build": "npm-run-all compile:sass prefix:css compress:css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "firebase-admin": "^11.11.0",
-    "nodemon": "^3.0.1"
-  }
+    "nodemon": "^3.0.1",
+    "autoprefixer": "^10.4.14",
+    "live-server": "^1.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.61.0"
+  },
+  "browserslist": [
+    "last 10 version"
+  ]
 }
